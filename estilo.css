@@ -66,3 +66,27 @@ body{
   background-color: #0005;
   border-radius: var(--raio-borda);
 }
+
+@media(min-width: 300px)and (max-width: 800px){
+  body{
+     width: 100vw;
+  }
+  .destaque{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .campo{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .campo label{
+    margin-bottom:20px;
+    font-size: 1.4rem;
+  }
+  .entrada{
+   padding: 2px 3px;
+  }
+}
