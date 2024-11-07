@@ -67,9 +67,10 @@ body{
   border-radius: var(--raio-borda);
 }
 
-@media(min-width: 300px)and (max-width: 800px){
+@media(min-width: 300px) and (max-width: 800px){
   body{
      width: 100vw;
+    
   }
   .destaque{
     text-align: center;

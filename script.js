@@ -43,7 +43,6 @@ botao.addEventListener("click", () => {
   let cifrado = cifrar(textoParaCriptografar, deslocamento);
   resposta.classList.remove("invisivel");
   resposta.innerText = cifrado;
-  
 });
 
 function cifrar(texto, deslocamento) {
@@ -55,12 +54,11 @@ function cifrar(texto, deslocamento) {
 
     if (indiceDaLetra >= 0) {
       textoCriptografado.push(letraPorIndice(indiceDaLetra + deslocamento));
-    }
-    else{
-      textoCriptografado.push(textoMaiusculo[i])
+    } else {
+      textoCriptografado.push(textoMaiusculo[i]);
     }
   }
- return textoCriptografado.join("");
+  return textoCriptografado.join("");
 }
 
 function letraPorIndice(indice) {
